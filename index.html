@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | Calculator app</title>
+
+    <link href="styles.css" rel="stylesheet" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
 </head>
 <body>
 
+    <div class="cal-container">
+        <div class="input-container">
+            <input type="text" name="calculate" value="0" class="input-body" />
+        </div>
+        <div class="cal-body">
+            <div class="cal-row btn cal-btn">7</div>
+            <div class="cal-row btn cal-btn">8</div>
+            <div class="cal-row btn cal-btn">9</div>
+            <div class="cal-row btn cal-btn not">DEL</div>
+            <div class="cal-row btn cal-btn">4</div>
+            <div class="cal-row btn cal-btn">5</div>
+            <div class="cal-row btn cal-btn">6</div>
+            <div class="cal-row btn cal-btn not">+</div>
+            <div class="cal-row btn cal-btn">1</div>
+            <div class="cal-row btn cal-btn">2</div>
+            <div class="cal-row btn cal-btn">3</div>
+            <div class="cal-row btn cal-btn not">-</div>
+            <div class="cal-row btn cal-btn not">.</div>
+            <div class="cal-row btn cal-btn">0</div>
+            <div class="cal-row btn cal-btn not">/</div>
+            <div class="cal-row btn cal-btn not">X</div>
+            <div class="reset btn cal-btn not">Reset</div>
+            <div class="equ btn cal-btn not">=</div>
+        </div>
+    </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
